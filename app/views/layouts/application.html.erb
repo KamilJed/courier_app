@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CourierApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+	<title>CourierApp</title>
+	<%= csrf_meta_tags %>
+	<%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<div class="grid-container">
+	<div></div>
+	<div>
+		<a href="/index" style="text-decoration: none; color: #05386b;">
+			<h1>KURIERPOL</h1>
+		</a>
+	</div>
+	<div style="min-height: 2000px">
+		<!--menu-->
+	</div>
+	<div style="min-height: 2000px">
+		<%= yield %>
+	</div>
+</div>
 
-  <body>
-    <%= yield %>
-  </body>
+</body>
 </html>
