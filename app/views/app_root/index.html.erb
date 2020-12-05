@@ -1,1 +1,10 @@
 <h1>Witaj w KrurierPol</h1>
+
+<% if logged_in? %>
+	<h1>Jesteś zalogowany, <%= current_user.name %>, <%= current_user.surname %></h1>
+<% end %>
+<% unless logged_in? %>
+<%=  button_to "Zaloguj się", '/login', method: :get, :class => "button" %>
+<%=  button_to "Zarejestruj się jako klient", '/clients/new', method: :get, :class => "button" %>
+<%=  button_to "Zarejestruj się jako kurier", '/couriers/new', method: :get, :class => "button" %>
+<% end %>

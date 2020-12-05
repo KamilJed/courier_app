@@ -1,0 +1,16 @@
+<h1>Zarejestruj się jako kurier</h1>
+<%= form_for @courier do |f|%>
+	<%= f.label :eMail%><br>
+	<%= f.text_field :eMail%><br>
+	<%= f.label :password%><br>
+	<%= f.password_field :password%><br>
+	<%= f.label :name%><br>
+	<%= f.text_field :name%><br>
+	<%= f.label :surname%><br>
+	<%= f.text_field :surname%><br>
+	<%= f.label :phoneNumber%><br>
+	<%= f.text_field :phoneNumber%><br>
+	<%= f.label :PESEL%><br>
+	<%= f.text_field :PESEL%><br>
+	<%= f.submit %>
+<%end%>

@@ -32,7 +32,21 @@
     color: #05386b;
 }
 .button {
-    width: 100px;
+    width: 250px;
+    background-color: #379683;
+    color: #05386b;
+    border: none;
+    padding: 15px 35px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button_logout {
+    width: 150px;
     background-color: #379683;
     color: #05386b;
     border: none;

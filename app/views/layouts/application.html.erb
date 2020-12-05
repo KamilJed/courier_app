@@ -11,12 +11,14 @@
 <div class="grid-container">
 	<div></div>
 	<div>
-		<a href="/index" style="text-decoration: none; color: #05386b;">
+		<a href="/" style="text-decoration: none; color: #05386b;">
 			<h1>KURIERPOL</h1>
 		</a>
 	</div>
 	<div style="min-height: 2000px">
-		<!--menu-->
+		<% if logged_in? %>
+			<%= button_to "Wyloguj się", '/logout', method: :get, :class => "button_logout"%>
+		<% end %>
 	</div>
 	<div style="min-height: 2000px">
 		<%= yield %>
